@@ -398,4 +398,69 @@ body {
   font-weight: 500;
   font-style: normal;
   font-size: 20px;
+  text-decoration: none;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #0593FB;
+}
+
+.skillsSection__allSkills {
+  margin-top: 200px;
+  max-width: 1184px;
+}
+
+.skillsSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+}
+
+.skillsSection__mainTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(201, 209, 216, 0.7);
+}
+
+.skillsSection__title {
+  margin-top: 128px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.skillsSection__title:before {
+  content: " ";
+  display: block;
+  width: 80px;
+  height: 4px;
+  margin-bottom: 24px;
+  background: #06c847;
+}
+
+.skillsSection__skillsList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-height: 200px;
+}
+
+.skillsList__skill {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 40px;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+}
+
+.skillsList__skill:before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #06c847;
+  border-radius: 50%;
+  background: #06c847;
+  margin-right: 20px;
 }
