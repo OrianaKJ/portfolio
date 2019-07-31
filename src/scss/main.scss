@@ -1,6 +1,6 @@
 @import "_normalize";
 @import "_variables";
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 
 html {
   box-sizing: border-box;
@@ -11,6 +11,53 @@ html {
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.portfolio {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 128px;
+  margin-left: 128px;
+}
+
+.heroSection {
+  max-width: 781px;
+  &__photo {
+    width: 100%;
+    max-width: 120px;
+    padding: 5px;
+    border: 5px solid #CBD2D9;
+    border-radius: 50%;
+  }
+  &__intro {
+    margin-bottom: 50px;
+  }
+}
+
+.intro__mainInfo {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 56px;
+}
+
+.intro__aboutMySkills {
+  max-width: 681px;
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.link {
+  color:#0593FB;
+  text-decoration: underline; 
+}
+
+.email {
+  margin-top: 50px;
+  color: #0593FB;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
 }
