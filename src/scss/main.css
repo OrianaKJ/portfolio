@@ -349,6 +349,8 @@ html {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  border: 16px solid #171F3F;
+  box-sizing: border-box;
 }
 
 .portfolio {
