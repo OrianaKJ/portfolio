@@ -13,19 +13,20 @@ html {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  border: 16px solid #171F3F;
-  box-sizing: border-box;
+  background: #171F3F;
 }
 
 .portfolio {
   max-width: 1440px;
   margin: 0 auto;
-  margin-top: 128px;
-  margin-left: 128px;
+  padding-top: 128px;
+  background: #fff;
+  margin-top:16px;
 }
 
 .heroSection {
   max-width: 781px;
+  margin-left: 128px;
   &__photo {
     width: 100%;
     max-width: 120px;
@@ -70,6 +71,7 @@ body {
 .skillsSection__allSkills{
   margin-top: 200px;
   max-width: 1184px;
+  margin-left: 128px;
 }
 
 .skillsSection {
@@ -125,3 +127,61 @@ body {
   }
 }
 
+.projectsSection {
+  background: #CBD2D9;
+  &__about {
+    max-width: 708px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  &__title {
+    margin-left: 128px;
+    font-size: 36px;
+    line-height: 48px;
+    padding-top: 128px;
+  }
+  &__description {
+    margin-left: 128px;
+  }
+  &__projects {
+    margin-left: 128px;
+  }
+}
+
+.portfolio__contactSection {
+  background: #171F3F;
+  color: #fff;
+  padding-left:128px;
+  padding-top: 128px;
+}
+.contactSection {
+  &__mainInfo {
+    width: 580px;
+  }
+  &__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  &::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #0593FB;
+    margin-bottom: 24px;
+  }
+  }
+  &__info {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 36px;
+  }
+  &__socialMedia {
+    padding-top: 24px;
+  }
+  &__email {
+    padding-top: 48px;
+    padding-bottom: 128px;
+  }
+}
