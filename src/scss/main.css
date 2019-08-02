@@ -470,7 +470,7 @@ body {
 }
 
 .projectsSection {
-  background: #CBD2D9;
+  background: #F5F7FA;
 }
 
 .projectsSection__about {
@@ -534,4 +534,8 @@ body {
 .contactSection__email {
   padding-top: 48px;
   padding-bottom: 128px;
+}
+
+.githubRepos__list {
+  list-style: none;
 }

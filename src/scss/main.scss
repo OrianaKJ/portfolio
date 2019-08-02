@@ -128,7 +128,7 @@ body {
 }
 
 .projectsSection {
-  background: #CBD2D9;
+  background: #F5F7FA;
   &__about {
     max-width: 708px;
     font-weight: 300;
@@ -184,4 +184,8 @@ body {
     padding-top: 48px;
     padding-bottom: 128px;
   }
+}
+
+.githubRepos__list {
+  list-style: none;
 }
