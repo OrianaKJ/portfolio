@@ -349,7 +349,7 @@ html {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #171F3F;
+  background: #fff;
 }
 
 .portfolio {
@@ -358,6 +358,7 @@ body {
   padding-top: 128px;
   background: #fff;
   margin-top: 16px;
+  border: 16px solid #171F3F;
 }
 
 .heroSection {
