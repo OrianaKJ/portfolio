@@ -4,6 +4,7 @@
 
 html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -26,7 +27,7 @@ body {
 }
 
 .heroSection {
-  max-width: 781px;
+  max-width: 780px;
   margin-left: 128px;
   &__photo {
     width: 100%;
@@ -42,14 +43,14 @@ body {
 
 .intro__mainInfo {
   font-weight: 600;
-  font-size: 40px;
-  line-height: 56px;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
 }
 
 .intro__aboutMySkills {
   max-width: 681px;
-  line-height: 36px;
-  font-size: 20px;
+  line-height: 2.25rem;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -63,7 +64,7 @@ body {
   color: #0593FB;
   font-weight: 500;
   font-style: normal;
-  font-size: 20px;
+  font-size:1.25rem ;
   text-decoration: none;
   padding-bottom: 10px;
   border-bottom: 2px solid #0593FB;
@@ -83,8 +84,8 @@ body {
 .skillsSection__mainTitle {
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
-  line-height: 48px;
+  font-size: 2.25rem;
+  line-height: 3rem;
   padding-bottom:30px;
   border-bottom: 1px solid rgba(201, 209, 216, 0.7);
 }
@@ -92,8 +93,8 @@ body {
 .skillsSection__title {
   margin-top: 128px;
   font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
  }
 
 .skillsSection__title:before {
@@ -111,8 +112,8 @@ body {
 }
 .skillsList__skill {
   font-weight: normal;
-  font-size: 18px;
-  line-height: 40px;
+  font-size: 1.125rem;
+  line-height: 2.5rem;
   list-style: none;
   display: flex;
   align-items: baseline;
@@ -133,13 +134,13 @@ body {
   &__about {
     max-width: 708px;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 1.25rem;
+    line-height: 3rem;
   }
   &__title {
     margin-left: 128px;
-    font-size: 36px;
-    line-height: 48px;
+    font-size: 2.25rem;
+    line-height: 3rem;
     padding-top: 128px;
   }
   &__description {
@@ -162,8 +163,8 @@ body {
   }
   &__title {
   font-weight: 600;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
   &::before {
     content: "";
     display: block;
@@ -175,8 +176,8 @@ body {
   }
   &__info {
     font-weight: 300;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
   }
   &__socialMedia {
     padding-top: 24px;
