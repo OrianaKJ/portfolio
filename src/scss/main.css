@@ -540,3 +540,7 @@ body {
 .githubRepos__list {
   list-style: none;
 }
+
+.icon {
+  width: 60px;
+}
