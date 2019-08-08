@@ -341,6 +341,7 @@ template {
 html {
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -354,11 +355,9 @@ body {
 }
 
 .portfolio {
-  max-width: 1440px;
   margin: 0 auto;
   padding-top: 128px;
   background: #fff;
-  margin-top: 16px;
   border: 16px solid #171F3F;
 }
 
@@ -442,7 +441,16 @@ body {
   width: 80px;
   height: 4px;
   margin-bottom: 24px;
+  border-radius: 8px;
   background: #06c847;
+}
+
+.skillsSection--violet .skillsSection__title:before {
+  background: #653CAD;
+}
+
+.skillsSection--blue .skillsSection__title:before {
+  background: #2251CC;
 }
 
 .skillsSection__skillsList {
@@ -465,10 +473,16 @@ body {
   display: block;
   width: 18px;
   height: 18px;
-  border: 1px solid #06c847;
-  border-radius: 50%;
-  background: #06c847;
+  background: url("../assets/img/greencheck.svg");
   margin-right: 20px;
+}
+
+.skillsSection--violet .skillsList__skill:before {
+  background: url("../assets/img/violetcheck.svg");
+}
+
+.skillsSection--blue .skillsList__skill:before {
+  background: url("../assets/img/bluecheck.svg");
 }
 
 .projectsSection {
@@ -512,15 +526,6 @@ body {
   font-weight: 600;
   font-size: 2rem;
   line-height: 2.75rem;
-}
-
-.contactSection__title::before {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 4px;
-  background: #0593FB;
-  margin-bottom: 24px;
 }
 
 .contactSection__info {
