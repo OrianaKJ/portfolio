@@ -507,6 +507,10 @@ body {
   margin-left: 128px;
 }
 
+.projectsSection__projects {
+  margin-bottom: 128px;
+}
+
 .projects__card {
   width: 1184px;
   margin-left: 82px;
@@ -607,6 +611,16 @@ body {
   font-weight: 600;
   font-size: 2rem;
   line-height: 2.75rem;
+}
+
+.contactSection__title::before {
+  display: block;
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #0593FB;
+  border-radius: 8px;
+  margin-bottom: 24px;
 }
 
 .contactSection__info {
