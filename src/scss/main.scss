@@ -166,16 +166,17 @@ body {
 }
 
 .project {
-  width: 516px;
+  width: 580px;
   height: 300px;
   background: #FFFFFF;
   box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
   border-radius: 8px;
   &__content {
-    margin: 48px 48px 112px 48px;
+    margin: 48px;
   }
   &__description {
     color: #52606D;
+    font-size: 1.125rem;
   }
   &__footer {
     height: 64px;
@@ -183,34 +184,55 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding: 16px;
+    justify-content: center;
     &-links {
-      display: flex;
+      display: inline-flex;
       width: 230px;
       height: 32px;
       align-items: center;
+      justify-content: space-between;
       padding: 16px;
+      margin-right: 48px;
     }
+  }
+  &__icon {
+    width: 48px;
+    height: 48px;
   }
   &__link {
       color: #0593FB;
+      height: 2rem;
       display: flex;
-      padding: 16px;
+      font-size: 1.125rem;
     &--demo::before {
       display: block;
       content: "";
       width: 24px;
       height: 24px;
-      background: url('../assets/img/demo.svg');
+      background: url('../assets/img/demo.svg') center no-repeat;
+      margin-right: 8px;
+    }
+    &--demo::after {
+      display: block;
+      content: "";
+      width: 2px;
+      height: 32px;
+      background: #CBD2D9;
+      margin-left: 24px;
+      margin-right: 24px;
     }
     &--github::before {
       display: block;
       content: "";
       width: 24px;
       height: 24px;
-      background: url('../assets/img/code.svg');
+      background: url('../assets/img/code.svg') center no-repeat;
+      margin-right: 8px;
     }
-
+    
+  }
+  &__title {
+    font-size: 1.25rem;
   }
 }
 .portfolio__contactSection {

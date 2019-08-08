@@ -513,7 +513,7 @@ body {
 }
 
 .project {
-  width: 516px;
+  width: 580px;
   height: 300px;
   background: #FFFFFF;
   box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
@@ -521,11 +521,12 @@ body {
 }
 
 .project__content {
-  margin: 48px 48px 112px 48px;
+  margin: 48px;
 }
 
 .project__description {
   color: #52606D;
+  font-size: 1.125rem;
 }
 
 .project__footer {
@@ -534,21 +535,29 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 16px;
+  justify-content: center;
 }
 
 .project__footer-links {
-  display: flex;
+  display: inline-flex;
   width: 230px;
   height: 32px;
   align-items: center;
+  justify-content: space-between;
   padding: 16px;
+  margin-right: 48px;
+}
+
+.project__icon {
+  width: 48px;
+  height: 48px;
 }
 
 .project__link {
   color: #0593FB;
+  height: 2rem;
   display: flex;
-  padding: 16px;
+  font-size: 1.125rem;
 }
 
 .project__link--demo::before {
@@ -556,7 +565,18 @@ body {
   content: "";
   width: 24px;
   height: 24px;
-  background: url("../assets/img/demo.svg");
+  background: url("../assets/img/demo.svg") center no-repeat;
+  margin-right: 8px;
+}
+
+.project__link--demo::after {
+  display: block;
+  content: "";
+  width: 2px;
+  height: 32px;
+  background: #CBD2D9;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .project__link--github::before {
@@ -564,7 +584,12 @@ body {
   content: "";
   width: 24px;
   height: 24px;
-  background: url("../assets/img/code.svg");
+  background: url("../assets/img/code.svg") center no-repeat;
+  margin-right: 8px;
+}
+
+.project__title {
+  font-size: 1.25rem;
 }
 
 .portfolio__contactSection {
