@@ -507,8 +507,64 @@ body {
   margin-left: 128px;
 }
 
-.projectsSection__projects {
-  margin-left: 128px;
+.projects__card {
+  width: 1184px;
+  margin-left: 82px;
+}
+
+.project {
+  width: 516px;
+  height: 300px;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
+  border-radius: 8px;
+}
+
+.project__content {
+  margin: 48px 48px 112px 48px;
+}
+
+.project__description {
+  color: #52606D;
+}
+
+.project__footer {
+  height: 64px;
+  background: #F5F7FA;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 16px;
+}
+
+.project__footer-links {
+  display: flex;
+  width: 230px;
+  height: 32px;
+  align-items: center;
+  padding: 16px;
+}
+
+.project__link {
+  color: #0593FB;
+  display: flex;
+  padding: 16px;
+}
+
+.project__link--demo::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../assets/img/demo.svg");
+}
+
+.project__link--github::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../assets/img/code.svg");
 }
 
 .portfolio__contactSection {
@@ -545,6 +601,9 @@ body {
 
 .githubRepos__list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
 }
 
 .icon {
