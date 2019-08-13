@@ -648,3 +648,59 @@ body {
 .icon {
   width: 60px;
 }
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 14px;
+  }
+  .portfolio {
+    border: none;
+    padding-top: 64px;
+  }
+  .portfolio__mainContent {
+    margin-bottom: 80px;
+  }
+  .heroSection, .skillsSection__allSkills, .projectsSection__title, .projectsSection__description, .projects__card {
+    margin-left: 16px;
+  }
+  .skillsSection {
+    display: block;
+  }
+  .skillsSection__skillsList {
+    display: block;
+    max-height: 376px;
+  }
+  .skillsSection__allSkills {
+    margin-top: 120px;
+  }
+  .skillsSection__mainTitle {
+    text-align: center;
+  }
+  .skillsSection__title {
+    margin-top: 62px;
+  }
+  .skillsSection__title:before {
+    width: 40px;
+  }
+  .project {
+    width: 343px;
+    height: 222px;
+  }
+  .githubRepos__list {
+    padding: 0;
+    display: block;
+  }
+  .projectsSection__title {
+    padding-top: 80px;
+    margin: 0 16px;
+    text-align: center;
+    font-size: 24px;
+  }
+  .projectsSection__description {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .portfolio__contactSection {
+    padding-left: 16px;
+  }
+}

@@ -9,7 +9,6 @@ fetch('https://api.github.com/users/OrianaKJ/repos')
         const repos = resp;
         for (const repo of repos) {
             const { description, homepage, html_url, name } = repo;
-            console.log(repo);
             cards.innerHTML += `<li class="project">
             <article class="project__content">
               <img src="../assets/img/githubblack.svg" alt="" class="project__icon">
