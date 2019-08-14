@@ -289,7 +289,7 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-  html {
+  .email {
     font-size: 14px;
   }
   .portfolio {
@@ -298,6 +298,14 @@ body {
   }
   .portfolio__mainContent {
     margin-bottom: 80px;
+  }
+  .intro__mainInfo {
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .intro__aboutMySkills {
+    font-size: 14px;
+    line-height: 26px;
   }
   .heroSection, .skillsSection__allSkills, .projectsSection__title, .projectsSection__description, .projects__card {
     margin-left: 16px;
@@ -308,15 +316,39 @@ body {
   .skillsSection__skillsList {
     display: block;
     max-height: 376px;
+    padding-left: 0px;
+  }
+  .skillsList__skill {
+    &:before {
+      content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
+      background: url('../assets/img/check-circle-green-small.svg');
+      margin-right: 10px;
+    
+    .skillsSection--violet & {
+     background: url('../assets/img/check-circle-violet-small.svg'); 
+    }
+  
+    .skillsSection--blue & {
+      background: url('../assets/img/check-circle-blue-small.svg');
+  }
+}
   }
 .skillsSection__allSkills {
   margin-top: 120px;
 }
 .skillsSection__mainTitle {
   text-align: center;
+  font-size: 24px;
 }
 .skillsSection__title {
   margin-top: 62px;
+  font-size: 22px;
+}
+.skillsList__skill {
+  font-size: 14px;
 }
 .skillsSection__title:before{
   width: 40px;
