@@ -370,8 +370,52 @@ height: 222px;
 .projectsSection__description {
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
+  font-weight: 400;
 }
 .portfolio__contactSection {
    padding-left: 16px;
 }
+
+.project {
+  width: 343px;
+  height: 222px;
+  &__icon {
+  margin-top: 32px;
+  width: 40px;
+  height: 40px;
+  }
+  &__content {
+    width: 284px;
+    height: 110px;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 600px;
+  } 
+  &__description {
+    font-weight: 400px;
+    font-size: 14px;
+    color: #52606D;
+  }
+  &__footer {
+    margin-top: 64px;
+    height: 48px;
+  }
+
+  &__footer-links {
+    line-height: 28px;
+  }
+  &__link {
+    font-size:14px;
+    text-decoration: none;
+    &--github::before {
+      width: 20px;
+      height: 20px;
+      margin-top:4px;
+      }
+   }
+}
+
+
 }
