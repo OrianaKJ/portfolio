@@ -650,6 +650,9 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
   .email {
     font-size: 14px;
   }
@@ -729,9 +732,14 @@ body {
     line-height: 26px;
     text-align: center;
     font-weight: 400;
+    margin-left: 16px;
+    margin-right: 16px;
   }
   .portfolio__contactSection {
     padding-left: 16px;
+  }
+  .projects__card {
+    max-width: 360px;
   }
   .project {
     width: 343px;

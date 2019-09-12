@@ -289,6 +289,9 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  body {
+    max-width: 375px;
+  }
   .email {
     font-size: 14px;
   }
@@ -361,22 +364,28 @@ height: 222px;
   padding: 0;
   display: block;
 }
-.projectsSection__title {
+.projectsSection {
+  &__title {
   padding-top: 80px;
   margin: 0 16px;
   text-align: center;
   font-size: 24px;
 }
-.projectsSection__description {
+  &__description {
   font-size: 14px;
   line-height: 26px;
   text-align: center;
   font-weight: 400;
+  margin-left: 16px;
+  margin-right: 16px;
+}
 }
 .portfolio__contactSection {
    padding-left: 16px;
 }
-
+.projects__card {
+  max-width: 360px;
+}
 .project {
   width: 343px;
   height: 222px;
