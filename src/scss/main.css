@@ -799,3 +799,14 @@ body {
     height: 32px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .portfolio {
+    border: none;
+    padding-top: 64px;
+  }
+  .heroSection {
+    margin: 0 16px;
+    font-size: 18px;
+  }
+}
