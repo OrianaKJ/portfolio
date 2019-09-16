@@ -806,7 +806,48 @@ body {
     padding-top: 64px;
   }
   .heroSection {
-    margin: 0 16px;
+    margin: 0 32px;
     font-size: 18px;
+  }
+  .intro__mainInfo {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+  .skillsSection__skillsList {
+    grid-template-columns: 1fr;
+    padding-left: 0px;
+    max-height: 342px;
+  }
+  .skillsSection__allSkills {
+    margin-top: 100px;
+    max-width: 768px;
+    margin-left: 36px;
+  }
+  .skillsSection__title {
+    margin-top: 64px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .projectsSection {
+    margin: auto;
+  }
+  .projectsSection__title {
+    text-align: center;
+    margin-left: 36px;
+  }
+  .projectsSection__description {
+    margin-left: 98px;
+  }
+  .projects__card {
+    margin-left: 98px;
+    max-width: 670px;
+  }
+  .githubRepos__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 0px;
+  }
+  .portfolio__contactSection {
+    padding-left: 98px;
   }
 }
