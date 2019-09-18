@@ -23,10 +23,10 @@ body {
   padding-top: 128px;
   background: #fff;
   border: 16px solid #171F3F;
+  max-width: 1440px;
 }
 
 .heroSection {
-  max-width: 780px;
   margin: 0 128px;
   &__photo {
     width: 100%;
@@ -45,10 +45,10 @@ body {
   font-size: 2.5rem;
   line-height: 3.5rem;
   margin: auto;
+  margin-top: 16px;
 }
 
 .intro__aboutMySkills {
-  max-width: 681px;
   line-height: 2.25rem;
   font-size: 1.25rem;
   font-weight: 300;
@@ -71,7 +71,6 @@ body {
 }
 
 .skillsSection__allSkills{
-  max-width: 1184px;
   margin: 128px;
 }
 
@@ -90,7 +89,6 @@ body {
 }
 
 .skillsSection__title {
-  margin-top: 128px;
   font-weight: 600;
   font-size: 2rem;
   line-height: 2.75rem;
@@ -114,7 +112,6 @@ body {
 .skillsSection__skillsList {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-height: 200px;
 }
 .skillsList__skill {
   font-weight: normal;
@@ -145,7 +142,6 @@ body {
   background: #F5F7FA;
   
   &__about {
-    max-width: 708px;
     font-weight: 300;
     font-size: 1.25rem;
     line-height: 3rem;
@@ -163,10 +159,6 @@ body {
     margin: auto 128px;
   }
 }
-
-// .projects__card {
-//   width: 1184px;
-// }
 
 .project {
   max-width: 580px;
@@ -241,13 +233,10 @@ body {
 .portfolio__contactSection {
   background: #171F3F;
   color: #fff;
-  padding-left:128px;
-  padding-top:128px;
+  padding:128px;
+  margin-top: 128px;
 }
 .contactSection {
-  &__mainInfo {
-    width: 580px;
-  }
   &__title {
   font-weight: 600;
   font-size: 2rem;
@@ -288,217 +277,27 @@ body {
   width: 60px;
 }
 
-// @media screen and (max-width: 375px) {
-//   body {
-//     max-width: 375px;
-//   }
-//   .email {
-//     font-size: 14px;
-//   }
-//   .portfolio {
-//     border: none;
-//     padding-top: 64px;
-//   }
-//   .portfolio__mainContent {
-//     margin-bottom: 80px;
-//   }
-//   .intro__mainInfo {
-//     font-size: 26px;
-//     line-height: 36px;
-//   }
-//   .intro__aboutMySkills {
-//     font-size: 14px;
-//     line-height: 26px;
-//   }
-//   .heroSection, .skillsSection__allSkills, .projectsSection__title, .projectsSection__description, .projects__card {
-//     margin-left: 16px;
-//   }
-//   .skillsSection {
-//     display: block;
-//   }
-//   .skillsSection__skillsList {
-//     display: block;
-//     max-height: 376px;
-//     padding-left: 0px;
-//   }
-//   .skillsList__skill {
-//     &:before {
-//       content: "";
-//       display: block;
-//       width: 12px;
-//       height: 12px;
-//       background: url('../assets/img/check-circle-green-small.svg');
-//       margin-right: 10px;
-    
-//     .skillsSection--violet & {
-//      background: url('../assets/img/check-circle-violet-small.svg'); 
-//     }
-  
-//     .skillsSection--blue & {
-//       background: url('../assets/img/check-circle-blue-small.svg');
-//   }
-// }
-//   }
-// .skillsSection__allSkills {
-//   margin-top: 120px;
-// }
-// .skillsSection__mainTitle {
-//   text-align: center;
-//   font-size: 24px;
-// }
-// .skillsSection__title {
-//   margin-top: 62px;
-//   font-size: 22px;
-// }
-// .skillsList__skill {
-//   font-size: 14px;
-// }
-// .skillsSection__title:before{
-//   width: 40px;
-// }
-// .project {
-// width: 343px;
-// height: 222px;
-// }
-// .githubRepos__list {
-//   padding: 0;
-//   display: block;
-// }
-// .projectsSection {
-//   &__title {
-//   padding-top: 80px;
-//   margin: 0 16px;
-//   text-align: center;
-//   font-size: 24px;
-// }
-//   &__description {
-//   font-size: 14px;
-//   line-height: 26px;
-//   text-align: center;
-//   font-weight: 400;
-//   margin-left: 16px;
-//   margin-right: 16px;
-// }
-// }
-// .portfolio__contactSection {
-//    padding-left: 16px;
-// }
-// .projects__card {
-//   max-width: 360px;
-// }
-// .project {
-//   width: 343px;
-//   height: 222px;
-//   &__icon {
-//   margin-top: 32px;
-//   width: 40px;
-//   height: 40px;
-//   }
-//   &__content {
-//     width: 284px;
-//     height: 110px;
-//   }
-//   &__title {
-//     font-size: 16px;
-//     font-weight: 600px;
-//   } 
-//   &__description {
-//     font-weight: 400px;
-//     font-size: 14px;
-//     color: #52606D;
-//   }
-//   &__footer {
-//     margin-top: 64px;
-//     height: 48px;
-//   }
+@media screen and (max-width: 768px) {
+  .intro {
+    &__mainInfo {
+    font-size: 2rem;
+    line-height: 3rem;
+    }
+  }
+  .githubRepos__list {
+    grid-template-columns: 1fr;
+  }
 
-//   &__footer-links {
-//     line-height: 28px;
-//   }
-//   &__link {
-//     font-size:14px;
-//     text-decoration: none;
-//     &--github::before {
-//       width: 20px;
-//       height: 20px;
-//       margin-top:4px;
-//       }
-//    }
-// }
-// .contactSection {
-//   &__mainInfo {
-//     width: 343px;
-//   }
-//   &__title {
-//     font-weight: 600;
-//     font-size: 24px;
-//     line-height: 32px;
-//   }
-//   &__title::before {
-//     width: 40px;
-//   }
-//   &__info {
-//     font-size: 14px;
-//     line-height: 26px;
-//   }
-//  }
-
-// .icon {
-//   width: 32px;
-//   height: 32px;
-// }
-// }
-
-// @media screen and (max-width: 768px) {
-//   .portfolio {
-//     border: none;
-//     padding-top: 64px;
-//   }
-//   .heroSection {
-//     margin: 0 32px;
-//     font-size: 18px;
-//   }
-//   .intro__mainInfo {
-//     font-size: 2rem;
-//     line-height: 3rem;
-//   }
-//   .skillsSection__skillsList {
-//     grid-template-columns: 1fr;
-//     padding-left: 0px;
-//     max-height: 342px;
-//   }
-//   .skillsSection__allSkills {
-//     margin-top: 100px;
-//     max-width: 768px;
-//     margin-left: 36px;
-//   }
-//   .skillsSection__title {
-//     margin-top: 64px;
-//     font-size: 1.5rem;
-//     line-height: 2rem;
-//   }
- 
-//   .projectsSection {
-//     margin: auto;
-//     &__title {
-//       text-align: center;
-//       margin-left: 36px;
-//     }
-//     &__description {
-//       margin-left: 98px;
-//     }
-//   }
-//   .projects__card {
-//     margin-left: 98px;
-//     max-width: 670px;
-//   }
-//   .githubRepos__list {
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     padding-left: 0px;
-//   }
-
-//   .portfolio__contactSection {
-//     padding-left: 98px;
-//   }
-// }
+  .skillsSection{
+    grid-template-columns: 1fr;
+    &__skillsList {
+    grid-template-columns: 1fr;
+    }
+    &__title {
+      font-size: 1.5rem;
+    }
+  }
+  .skillsList__skill {
+    font-size: 1rem;
+  }
+}
