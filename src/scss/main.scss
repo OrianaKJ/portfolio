@@ -301,3 +301,34 @@ body {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 375px) {
+  .portfolio {
+    border: none;
+    padding-top: 64px;
+    &__contactSection {
+      margin-top: 24px;
+      padding: 24px;
+    }
+  }
+
+  .heroSection {
+    margin: 0 24px;
+  }
+
+  .skillsSection__allSkills {
+    margin: 64px 24px;
+  }
+
+  .projectsSection {
+    &__title {
+      padding-top:64px;
+      margin: 0 24px;
+    }
+    &__description {
+      margin: 24px;
+    }
+    &__projects {
+      margin: 24px;
+    }
+  }
+}

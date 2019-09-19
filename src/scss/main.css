@@ -658,3 +658,30 @@ body {
     font-size: 1rem;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .portfolio {
+    border: none;
+    padding-top: 64px;
+  }
+  .portfolio__contactSection {
+    margin-top: 24px;
+    padding: 24px;
+  }
+  .heroSection {
+    margin: 0 24px;
+  }
+  .skillsSection__allSkills {
+    margin: 64px 24px;
+  }
+  .projectsSection__title {
+    padding-top: 64px;
+    margin: 0 24px;
+  }
+  .projectsSection__description {
+    margin: 24px;
+  }
+  .projectsSection__projects {
+    margin: 24px;
+  }
+}
