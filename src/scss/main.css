@@ -659,7 +659,7 @@ body {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   .portfolio {
     border: none;
     padding-top: 64px;
@@ -667,6 +667,9 @@ body {
   .portfolio__contactSection {
     margin-top: 24px;
     padding: 24px;
+  }
+  .email {
+    font-size: 1rem;
   }
   .heroSection {
     margin: 0 24px;
