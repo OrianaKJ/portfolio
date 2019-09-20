@@ -364,6 +364,13 @@ body {
   max-width: 1440px;
 }
 
+.portfolio__contactSection {
+  background: #171F3F;
+  color: #fff;
+  padding: 128px;
+  margin-top: 128px;
+}
+
 .heroSection {
   margin: 0 128px;
 }
@@ -445,11 +452,13 @@ body {
   background: #06c847;
 }
 
-.skillsSection--violet .skillsSection__title:before {
+.skillsSection--violet
+.skillsSection__title::before {
   background: #653CAD;
 }
 
-.skillsSection--blue .skillsSection__title:before {
+.skillsSection--blue
+.skillsSection__title::before {
   background: #2251CC;
 }
 
@@ -512,7 +521,7 @@ body {
 .project {
   max-width: 580px;
   max-height: 300px;
-  background: #FFFFFF;
+  background: #fff;
   box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
   border-radius: 8px;
 }
@@ -587,13 +596,6 @@ body {
 
 .project__title {
   font-size: 1.25rem;
-}
-
-.portfolio__contactSection {
-  background: #171F3F;
-  color: #fff;
-  padding: 128px;
-  margin-top: 128px;
 }
 
 .contactSection__title {

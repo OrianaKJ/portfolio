@@ -1,15 +1,15 @@
 "use strict";
-console.log(`Hello! Nice to see you here`);
+console.log(`Hello! Nice to see you here👋. If you like my work, feel free to contact me: oriana.koziorynska@gmail.com`);
 
 const cards = document.querySelector('.githubRepos__list');
 
 fetch('https://api.github.com/users/OrianaKJ/repos')
-    .then(resp => resp.json())
-    .then(resp => {
-        const repos = resp;
-        for (const repo of repos) {
-            const { description, homepage, html_url, name } = repo;
-            cards.innerHTML += `<li class="project">
+  .then(resp => resp.json())
+  .then(resp => {
+    const repos = resp;
+    for (const repo of repos) {
+      const { description, homepage, html_url, name } = repo;
+      cards.innerHTML += `<li class="project">
             <article class="project__content">
               <img src="../assets/img/githubblack.svg" alt="" class="project__icon">
               <h4 class="project__title">${name}</h4>
@@ -23,9 +23,9 @@ fetch('https://api.github.com/users/OrianaKJ/repos')
               </article>
             </footer>
           </li>`;
-        }
+    }
 
-    })
-    .catch(err => {
-        console.log(err);
-    })
+  })
+  .catch(err => {
+    console.log(err);
+  })

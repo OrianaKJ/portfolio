@@ -1,5 +1,5 @@
-@import "_normalize";
-@import "_variables";
+@import "_normalize.scss";
+@import "_variables.scss";
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap&subset=latin-ext');
 
 html {
@@ -17,15 +17,21 @@ html {
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: #fff;
+  background:$white;
 }
 
 .portfolio {
   margin: 0 auto;
   padding-top: 128px;
-  background: #fff;
-  border: 16px solid #171F3F;
+  background: $white;
+  border: 16px solid $dark-blue;
   max-width: 1440px;
+  &__contactSection {
+    background: $dark-blue;
+    color: $white;
+    padding:128px;
+    margin-top: 128px;
+  }
 }
 
 .heroSection {
@@ -34,7 +40,7 @@ body {
     width: 100%;
     max-width: 120px;
     padding: 5px;
-    border: 5px solid #CBD2D9;
+    border: 5px solid $light-gray;
     border-radius: 50%;
   }
   &__intro {
@@ -42,34 +48,36 @@ body {
   }
 }
 
-.intro__mainInfo {
+.intro {
+  &__mainInfo {
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 3.5rem;
   margin: auto;
   margin-top: 16px;
-}
+  } 
 
-.intro__aboutMySkills {
+  &__aboutMySkills {
   line-height: 2.25rem;
   font-size: 1.25rem;
   font-weight: 300;
+  }
 }
 
 .link {
-  color:#0593FB;
+  color:$light-blue;
   text-decoration: underline; 
 }
 
 .email {
   margin-top: 50px;
-  color: #0593FB;
+  color: $light-blue;
   font-weight: 500;
   font-style: normal;
   font-size:1.25rem ;
   text-decoration: none;
   padding-bottom: 10px;
-  border-bottom: 2px solid #0593FB;
+  border-bottom: 2px solid $light-blue;
 }
 
 .skillsSection__allSkills{
@@ -94,21 +102,22 @@ body {
   font-weight: 600;
   font-size: 2rem;
   line-height: 2.75rem;
- }
-
-.skillsSection__title:before {
-  content: " ";
-  display: block;
-  width: 80px;
-  height: 4px;
-  margin-bottom: 24px;
-  border-radius: 8px;
-  background: #06c847;
-  .skillsSection--violet & {
-    background: #653CAD;
+  &:before {
+    content: " ";
+    display: block;
+    width: 80px;
+    height: 4px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    background: $green;
   }
-  .skillsSection--blue & {
-    background: #2251CC;
+.skillsSection--violet 
+    &::before {
+    background: $violet;
+  }
+.skillsSection--blue 
+    &::before {
+    background: $blue;
   }
 }
 .skillsSection__skillsList {
@@ -130,18 +139,18 @@ body {
     background: url('../assets/img/greencheck.svg');
     margin-right: 20px;
   
-  .skillsSection--violet & {
+.skillsSection--violet & {
    background: url('../assets/img/violetcheck.svg'); 
   }
 
-  .skillsSection--blue & {
+.skillsSection--blue & {
     background: url('../assets/img/bluecheck.svg');
   }
 }
 }
 
 .projectsSection {
-  background: #F5F7FA;
+  background: $cream;
   
   &__about {
     font-weight: 300;
@@ -165,7 +174,7 @@ body {
 .project {
   max-width: 580px;
   max-height: 300px;
-  background: #FFFFFF;
+  background: $white;
   box-shadow: 0px 6px 16px rgba(24, 41, 67, 0.09);
   border-radius: 8px;
   &__content {
@@ -177,7 +186,7 @@ body {
   }
   &__footer {
     height: 64px;
-    background: #F5F7FA;
+    background: $cream;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -197,7 +206,7 @@ body {
     height: 48px;
   }
   &__link {
-      color: #0593FB;
+      color: $light-blue;
       height: 2rem;
       display: flex;
       font-size: 1.125rem;
@@ -214,7 +223,7 @@ body {
       content: "";
       width: 2px;
       height: 32px;
-      background: #CBD2D9;
+      background: $light-gray;
       margin-left: 24px;
       margin-right: 24px;
     }
@@ -232,12 +241,7 @@ body {
     font-size: 1.25rem;
   }
 }
-.portfolio__contactSection {
-  background: #171F3F;
-  color: #fff;
-  padding:128px;
-  margin-top: 128px;
-}
+
 .contactSection {
   &__title {
   font-weight: 600;
@@ -248,7 +252,7 @@ body {
     content: "";
     width: 80px;
     height: 4px;
-    background: #0593FB;
+    background: $light-blue;
     border-radius: 8px;
     margin-bottom: 24px;
   }
